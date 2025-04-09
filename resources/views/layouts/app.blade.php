@@ -39,7 +39,7 @@
         <!-- Page Content -->
         <main>
             @if ($message = Session::get('success'))
-                <div class="alert alert-success alert-dismissible mt-1">
+                <div class="alert alert-success alert-dismissible mt-1 bg-green-100">
                     <div class="d-flex">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon alert-icon" width="24"

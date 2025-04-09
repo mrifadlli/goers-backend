@@ -16,9 +16,6 @@ class OpeningHour extends Model
         'close_time',
     ];
 
-    /**
-     * Relasi ke Restaurant
-     */
     public function restaurant()
     {
         return $this->belongsTo(Restaurant::class);

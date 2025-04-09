@@ -38,11 +38,9 @@
                                     <td>{{ $restaurant->name }}</td>
                                     <td>
                                         @foreach ($restaurant->openingHours as $hour)
-                                            <div>
-                                                {{ $hour->day }}:
-                                                {{ Carbon::parse($hour->open_time)->format('H:i') }} -
-                                                {{ Carbon::parse($hour->close_time)->format('H:i') }}
-                                            </div>
+                                            <span class="badge bg-green-lt">
+                                                {{ $hour->day }}
+                                            </span>
                                         @endforeach
                                     </td>
                                     <td class="text-end">

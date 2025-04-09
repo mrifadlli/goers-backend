@@ -13,9 +13,6 @@ class Restaurant extends Model
         'name',
     ];
 
-    /**
-     * Relasi ke opening_hours
-     */
     public function openingHours()
     {
         return $this->hasMany(OpeningHour::class);
