@@ -13,7 +13,9 @@ class RestaurantController extends Controller
 {
     public function index()
     {
-        $restaurants = Restaurant::with('openingHours')->get();
+        $restaurants = Restaurant::with('openingHours')
+        ->latest() 
+        ->get();
         return RestaurantResource::collection($restaurants);
     }
 
